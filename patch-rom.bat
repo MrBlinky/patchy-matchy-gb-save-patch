@@ -1,7 +1,9 @@
 @echo off
 pushd "%~dp0"
 
-call :patch "patchymatchy.gb"
+call :patch "patchymatchy.gb", -DV10
+call :patch "patchymatchy-v1.0.gb", -DV10
+call :patch "patchymatchy-v1.1.gb", -DV11
 
 popd
 exit /B
